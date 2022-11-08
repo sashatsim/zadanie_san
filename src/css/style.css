@@ -1,3 +1,14 @@
-.text {
-    color: rgb(243, 12, 12);
+h2 {
+  background-color: rgb(10, 75, 255);
+  color: rgb(251, 255, 0);
+}
+
+h1 {
+  color: blue;
+}
+
+.main {
+  background-color: aqua;
+  margin: 5%;
+  text-align: center;
 }
