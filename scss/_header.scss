@@ -1,4 +1,119 @@
-h2 {
-    background-color: rgb(255, 0, 234);
-    color: rgb(251, 255, 0);
+.text{
+padding-top: 24.5px;
+padding-left: 432px;
+width: 166px;
+height: 31px;
+float: left;
+display: block;
+
+/* Текст / 21px, Medium */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 143%;
+/* or 30px */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.text1{
+width: 134px;
+height: 18px;
+padding-top: 24px;
+padding-left: 275px;
+float: left;
+display: block;
+
+/* Текст / 12, Regular */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+color: #ffffff;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.HEADER{
+width: 1920px;
+height: 120px;
+color: #FFFFFF;
+}
+.text2{
+float: left;
+display: block;
+width: 154px;
+height: 36px;
+padding-left: 88px;
+padding-top: 24px;
+
+/* Текст / 12, Regular */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+}
+
+.text3{
+    width: 171px;
+height: 28px;
+
+/* Текст / 18px, Bold */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 152%;
+padding-left: 129px;
+padding-top: 24px;
+/* identical to box height, or 27px */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.text4{
+width: 169px;
+height: 18px;
+
+/* Текст / 12, Regular */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+padding-left: 129px;
+/* identical to box height, or 18px */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
 }

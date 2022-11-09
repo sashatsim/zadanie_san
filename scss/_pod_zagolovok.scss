@@ -1,0 +1,26 @@
+.pod_zagolovok{
+
+//padding-left: 369px;
+width: 544px;
+height: 119px;
+
+/* Текст / 21px, Regular */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 143%;
+/* or 30px */
+
+letter-spacing: -0.2px;
+
+color: #ffffff;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}

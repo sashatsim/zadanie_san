@@ -1,0 +1,26 @@
+.zagolovok{
+    //padding-top: 272px;
+   // padding-left: 369px;
+    width: 580px;
+    height: 100px;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 118.5%;
+    /* or 43px */
+    
+    letter-spacing: 0.025em;
+    font-feature-settings: 'salt' on;
+    
+    color: #ffffff;
+    
+    //border: 2px solid #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
