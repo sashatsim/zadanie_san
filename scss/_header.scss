@@ -1,10 +1,7 @@
 
 .text{
-/* padding-top: 24.5px;
-//padding-left: 432px;
 width: 166px;
 height: 31px;
- */
 padding-top: 24.5px;
 justify-self: start;
 font-family: 'Montserrat';
@@ -12,19 +9,15 @@ font-style: normal;
 font-weight: 500;
 font-size: 21px;
 line-height: 143%;
-align-items: start;
+
 grid-area: a;
-color: #000000;
-align-self: end;
+color: #ffffff;
+align-self: start;
 }
 
 .text1{
-/* width: 134px;
+width: 134px;
 height: 18px;
-padding-top: 24px;
-padding-left: 275px;
-float: left;
-display: block; */
 padding-top: 24px;
 grid-area: b;
 font-family: 'Montserrat';
@@ -33,27 +26,21 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 justify-self: end;
-color: #000000;
+color: #ffffff;
 align-self: start;
 }
 .HEADER{
-/* width: 1920px;
-height: 120px;
-color: #FFFFFF; */
+position: absolute;
 display: grid;
-grid-template-columns: 369px minmax(222px, 598px) minmax(162px, 409px) minmax(180.36px, 239px) minmax(202px, 303px) 337px;
+grid-template-columns: minmax(10px,369px) 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
 grid-template-areas: 
-"nul a b c d null"
-"nul a b g f null";
+"nul imgg a nulll f1 b nullll f2 c nulllll f3 d null"
+"nul imgg a nulll f1 b nullll f2 c nulllll f3 f null";
 }
 .text2{
-/* float: left;
-display: block;
+padding-top: 24px; 
 width: 154px;
 height: 36px;
-padding-left: 88px;
-padding-top: 24px; */
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -61,7 +48,9 @@ font-size: 12px;
 line-height: 150%;
 grid-area: c;
 justify-self: end;
-align-self: end;
+align-self: start;
+color: rgb(255, 255, 255);
+align-items: start;
 }
 
 .text3{
@@ -73,22 +62,14 @@ font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 152%;
-/* padding-left: 129px; */
 padding-top: 17px;
 justify-self: end;
-/* display: flex;
-align-items: center; */
-
-color: #000000;
-/* 
-flex: auto;
-order: 1;
-flex-grow: 0; */
+color: #ffffff;
 }
 
 .text4{
-/* width: 169px;
-height: 18px; */
+width: 169px;
+height: 18px;
 
 font-family: 'Montserrat';
 font-style: normal;
@@ -96,16 +77,9 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 justify-self: end;
-/* padding-left: 129px; */
 grid-area: f;
-/* display: flex;
-align-items: center; */
 
-color: #000000;
-/* 
-flex: auto;
-order: 1;
-flex-grow: 0; */
+color: #ffffff;
 }
 .text5{
 font-family: 'Montserrat';
@@ -115,10 +89,49 @@ font-size: 12px;
 line-height: 150%;
 grid-area: g;
 justify-self: end;
+color: #ffffff;
 }
+
 .pusto{
     grid-area: nul;
 }
+
 .pusto1{
     grid-area: null;
+}
+
+.pusto3{
+    grid-area:nulll ;
+}
+
+.pusto4{
+    grid-area: nullll;
+}
+
+.pusto2{
+    grid-area: nulllll;
+}
+
+.imgg{
+    grid-area: imgg;
+    justify-self: center;
+    align-self: end;
+}
+
+.f1{
+    grid-area: f1;
+    justify-self: start;
+    align-self: center;
+}
+
+.f2{
+    grid-area: f2;
+    justify-self: start;
+    align-self: center;
+}
+
+.f3{
+    grid-area: f3;
+    justify-self: start;
+    align-self: center;
 }
