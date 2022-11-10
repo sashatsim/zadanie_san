@@ -1,119 +1,124 @@
+
 .text{
-padding-top: 24.5px;
-padding-left: 432px;
+/* padding-top: 24.5px;
+//padding-left: 432px;
 width: 166px;
 height: 31px;
-float: left;
-display: block;
-
-/* Текст / 21px, Medium */
-
+ */
+padding-top: 24.5px;
+justify-self: start;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 21px;
 line-height: 143%;
-/* or 30px */
-
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+align-items: start;
+grid-area: a;
+color: #000000;
+align-self: end;
 }
 
 .text1{
-width: 134px;
+/* width: 134px;
 height: 18px;
 padding-top: 24px;
 padding-left: 275px;
 float: left;
-display: block;
-
-/* Текст / 12, Regular */
-
+display: block; */
+padding-top: 24px;
+grid-area: b;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
-/* identical to box height, or 18px */
-
-
-color: #ffffff;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+justify-self: end;
+color: #000000;
+align-self: start;
 }
 .HEADER{
-width: 1920px;
+/* width: 1920px;
 height: 120px;
-color: #FFFFFF;
+color: #FFFFFF; */
+display: grid;
+grid-template-columns: 369px minmax(222px, 598px) minmax(162px, 409px) minmax(180.36px, 239px) minmax(202px, 303px) 337px;
+grid-template-areas: 
+"nul a b c d null"
+"nul a b g f null";
 }
 .text2{
-float: left;
+/* float: left;
 display: block;
 width: 154px;
 height: 36px;
 padding-left: 88px;
-padding-top: 24px;
-
-/* Текст / 12, Regular */
+padding-top: 24px; */
 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
+grid-area: c;
+justify-self: end;
+align-self: end;
 }
 
 .text3{
 width: 171px;
-height: 28px;
-
-/* Текст / 18px, Bold */
-
+height: 28px; 
+grid-area: d;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 152%;
-padding-left: 129px;
+/* padding-left: 129px; */
 padding-top: 17px;
-/* identical to box height, or 27px */
+justify-self: end;
+/* display: flex;
+align-items: center; */
 
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
+color: #000000;
+/* 
+flex: auto;
+order: 1;
+flex-grow: 0; */
 }
 
 .text4{
-width: 169px;
-height: 18px;
-
-/* Текст / 12, Regular */
+/* width: 169px;
+height: 18px; */
 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
-padding-left: 129px;
-/* identical to box height, or 18px */
+justify-self: end;
+/* padding-left: 129px; */
+grid-area: f;
+/* display: flex;
+align-items: center; */
 
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
+color: #000000;
+/* 
+flex: auto;
+order: 1;
+flex-grow: 0; */
+}
+.text5{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+grid-area: g;
+justify-self: end;
+}
+.pusto{
+    grid-area: nul;
+}
+.pusto1{
+    grid-area: null;
 }
