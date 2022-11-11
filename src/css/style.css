@@ -72,7 +72,7 @@
 .HEADER {
   position: absolute;
   display: grid;
-  grid-template-columns: minmax(10px, 369px) 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
+  grid-template-columns: 369px 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
   grid-template-areas: "nul imgg a nulll f1 b nullll f2 c nulllll f3 d null" "nul imgg a nulll f1 b nullll f2 c nulllll f3 f null";
 }
 
@@ -188,7 +188,7 @@
   position: absolute;
   width: 208px;
   height: 88px;
-  left: 30% px;
+  left: 30;
   top: 583px;
 }
 
@@ -215,33 +215,65 @@
   background: url("otvetka.png") no-repeat;
 }
 
-.image1 {
+.screen {
   display: grid;
-  grid-template-columns: minmax(20px, 369px) 1551px;
-  grid-template-areas: "nu image1" "nunu nunu";
-  grid-template-rows: 1280px 701px;
-}
-
-.im {
-  grid-area: image1;
-  background: url("sfera.jpg") no-repeat;
-  background-size: contain;
+  grid-template-columns: minmax(10px, 369px) minmax(400px, 1551px);
+  grid-template-rows: 870px 410px;
+  grid-template-areas: "pusto foto" "cloud cloud";
   background-color: rgb(0, 0, 0);
+  width: 1920px;
 }
 
-.pustoo {
-  grid-area: nunu;
-  background: url("cloud.png");
-  margin-top: 580px;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
+.sfera {
+  grid-area: foto;
+  background: url("sfera.jpg") no-repeat;
+  background-position-x: bottom right;
+  background-size: 1497px 870px;
 }
 
-.pusto0 {
-  grid-area: nu;
+.pusto {
+  grid-area: pusto;
   background-color: black;
+  min-width: 10px;
 }
 
+.cloud {
+  grid-area: cloud;
+  margin-top: -270px;
+  background: url("cloud.png") no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* .image1{
+display: grid;
+grid-template-columns: minmax(20px,369px) 1551px;
+grid-template-areas: 
+"nu imagee"
+"nunu nunu";
+grid-template-rows: 1375px 701px;
+}
+.im{
+    grid-area: imagee;
+    background: url("sfera.jpg") no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 100%;
+    max-height:  1551px;
+}
+.pustoo{
+    grid-area: nunu;
+   // background: url("cloud.png");
+
+    //background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    //max-width: 1920px;
+    //background-size: contain;
+}
+.pusto0{
+    grid-area: nu;
+    background-color: black;
+} */
 .TEXT {
   display: flex;
   flex-direction: column;

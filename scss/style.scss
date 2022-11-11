@@ -49,31 +49,73 @@ height: 806px;
 background: url("otvetka.png") no-repeat;
 }
 
-.image1{
+.screen{
+    //position: fixed;
+    display: grid;
+    grid-template-columns:  minmax(10px,369px) minmax(400px,1551px);
+    grid-template-rows: 870px 410px;
+    grid-template-areas: 
+    "pusto foto"
+    "cloud cloud";
+    background-color: rgb(0, 0, 0);
+    width: 1920px;
+}
+.sfera{
+    grid-area: foto;
+    background: url("sfera.jpg") no-repeat;
+    background-position-x: bottom right;
+    //margin-left: -150px;
+    //margin-left: 200px;
+    background-size: 1497px 870px;
+    
+}
+.pusto{
+    grid-area: pusto;
+    background-color: black;
+    min-width: 10px;
+}
+.cloud{
+    grid-area: cloud;
+   // align-items: flex-start;
+    //align-self: start;
+    //align-content: flex-start;
+    margin-top: -270px;
+    background: url("cloud.png") no-repeat;
+    //margin-top: -500xp;
+    //position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    //position: fixed;
+}
+/* .image1{
 display: grid;
 grid-template-columns: minmax(20px,369px) 1551px;
 grid-template-areas: 
-"nu image1"
+"nu imagee"
 "nunu nunu";
-grid-template-rows: 1280px 701px;
+grid-template-rows: 1375px 701px;
 }
 .im{
-    grid-area: image1;
+    grid-area: imagee;
     background: url("sfera.jpg") no-repeat;
-    background-size: contain;
-    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-color: black;
+    height: 100%;
+    max-height:  1551px;
 }
 .pustoo{
     grid-area: nunu;
-    background: url("cloud.png");
-    margin-top: 580px;
-    background-color: rgba(0, 0, 0, 0);
+   // background: url("cloud.png");
+   
+    //background-color: rgba(0, 0, 0, 0);
     position: absolute;
+    width: 100%;
+    //max-width: 1920px;
+    //background-size: contain;
 }
 .pusto0{
     grid-area: nu;
     background-color: black;
-}
+} */
 .TEXT{
 display: flex;
 flex-direction: column;
