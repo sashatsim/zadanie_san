@@ -1,0 +1,201 @@
+.otvetka{
+    display: grid;
+    grid-template-columns: minmax(10px,369px) 1181px 370px;
+    grid-template-rows: 1006px;
+    grid-template-areas: 
+    "p vn pp";
+}
+.p{
+grid-area: p;
+}
+.pp{
+grid-area: pp;
+}
+.vn{
+grid-area: vn;
+}
+.cl{
+    display: grid;
+    grid-template-columns: minmax(30px, 1920px);
+    grid-template-rows: 410px;
+    grid-template-areas: "cloud";
+    background-color: rgb(0, 0, 0);
+}
+
+.vn_grid{
+    display: grid;
+    grid-template-columns: minmax(575px, 590.5px) minmax(575px, 590.5px);
+}
+.ramka{
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 70px 80px;
+gap: 30px;
+width: 559px;
+height: 850px; 
+background: #FFFFFF;
+border: 8px solid #000000;
+border-radius: 5px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.zagolovok_vnutri{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 50px;
+width: 580px;
+height: 617px;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.zagolovok_ramka{
+width: 472px;
+height: 240px;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+letter-spacing: -4.5px;
+color: #2E363E;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.podzagolovok_ramka{
+    width: 399px;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2E363E;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 0px;
+}
+
+.number{
+width: 399px;
+height: 85px;
+    
+background: #E1E2E3;
+border-radius: 8px;
+ 
+flex:none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 160%;
+text-align: center;
+}
+
+.email{
+width: 399px;
+height: 79px;
+        
+background: #E1E2E3;
+border-radius: 8px;
+     
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 160%;
+text-align: center;
+}
+
+.zapis{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 29px 201px;
+gap: 10px;
+
+width: 399px;
+height: 85px;
+ 
+background: #000000;
+border-radius: 8px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;   
+}
+
+.zapis:active{
+vertical-align: middle;
+background-color: #505050;
+}
+.zapis_text{
+width: 184px;
+height: 28px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 152%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.sogl_button{
+box-sizing: border-box;
+
+width: 14px;
+height: 14px;
+
+background: #616268;
+border: 1px solid #616268;
+border-radius: 2px;
+//margin-top: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.sogl_text{
+   // position: absolute;
+width: 252px;
+height: 15px;
+padding-left: 30px;
+padding-bottom: 30px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 130%;
+/* identical to box height, or 14px */
+
+
+/* Серый 5 */
+
+color: #7E868E;
+}
