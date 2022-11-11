@@ -21,110 +21,50 @@ $md4: 479.98;
 
 .CLOUD{
     display: grid;
-    grid-template-columns: minmax(410px, 1920px);
+    grid-template-columns: minmax(30px, 1920px);
     grid-template-rows: 410px;
     grid-template-areas: "cloud";
-    background-color: black;
-    width: 1920px;
+    background-color: rgb(0, 0, 0);
 }
 .INSIDE{
-    
-//height: 1384px;
 background:rgba(0, 0, 0, 0) no-repeat;
-//background: #000000;
-
-/* Inside auto layout */
-
 flex: none;
 order: 0;
 flex-grow: 0;
 margin: -2px 0px;
+
 }
 .inside{
-    //background-color: rgba(0, 0, 0, 0);
+    //background: url("cloud.png");
 }
-
-.otvetka{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px 333px 0px 128px;
-gap: 79px;
-
-width: 1920px;
-height: 806px;
-
-background: url("otvetka.png") no-repeat;
-}
-
 .screen{
-    //position: fixed;
     display: grid;
-    grid-template-columns:  minmax(10px,369px) minmax(400px,1180px);
+    grid-template-columns:  minmax(10px,369px) minmax(400px,1180px) 369px;
     grid-template-rows: 870px;
     grid-template-areas: 
     "pusto foto foto";
     background-color: rgb(0, 0, 0);
-    width: 1920px;
+    //width: 1920px;
 }
 .sfera{
     grid-area: foto;
     background: url("sfera.jpg") no-repeat;
     background-position-x: bottom right;
-    //margin-left: -150px;
-    //margin-left: 200px;
     background-size: 1497px 870px;
     
 }
 .pusto{
     grid-area: pusto;
     background-color: black;
-    //min-width: 10px;
-    //position: fixed;
 }
 .cloud{
     grid-area: cloud;
-   // align-items: flex-start;
-    //align-self: start;
-    //align-content: flex-start;
     margin-top: -270px;
-    background: url("cloud.png") no-repeat;
-    //margin-top: -500xp;
-    //position: relative;
-    //background-size: contain;
+    background: url("cloud.png") repeat-x;
     background-color: rgba(0, 0, 0, 0);
-    //position: fixed;
+
 }
-/* .image1{
-display: grid;
-grid-template-columns: minmax(20px,369px) 1551px;
-grid-template-areas: 
-"nu imagee"
-"nunu nunu";
-grid-template-rows: 1375px 701px;
-}
-.im{
-    grid-area: imagee;
-    background: url("sfera.jpg") no-repeat;
-    background-size: cover;
-    background-color: black;
-    height: 100%;
-    max-height:  1551px;
-}
-.pustoo{
-    grid-area: nunu;
-   // background: url("cloud.png");
-   
-    //background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: 100%;
-    //max-width: 1920px;
-    //background-size: contain;
-}
-.pusto0{
-    grid-area: nu;
-    background-color: black;
-} */
+
 .TEXT{
 display: flex;
 flex-direction: column;
