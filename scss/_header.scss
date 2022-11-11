@@ -32,7 +32,7 @@ align-self: start;
 .HEADER{
 position: absolute;
 display: grid;
-grid-template-columns: 369px 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
+grid-template-columns: minmax(10px, 369px) 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
 grid-template-areas: 
 "nul imgg a nulll f1 b nullll f2 c nulllll f3 d null"
 "nul imgg a nulll f1 b nullll f2 c nulllll f3 f null";

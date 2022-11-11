@@ -72,7 +72,7 @@
 .HEADER {
   position: absolute;
   display: grid;
-  grid-template-columns: 369px 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
+  grid-template-columns: minmax(10px, 369px) 63px 166px minmax(10px, 246px) 29px 133px minmax(10px, 60px) 29px 154px minmax(10px, 98px) 31px 171px 371px;
   grid-template-areas: "nul imgg a nulll f1 b nullll f2 c nulllll f3 d null" "nul imgg a nulll f1 b nullll f2 c nulllll f3 f null";
 }
 
@@ -171,30 +171,69 @@
 }
 
 .text_page {
-  flex-direction: row;
-  padding: 10px 18px;
-  gap: 10px;
-  background: #F2F6FA;
-  border-radius: 5px;
-  /* Inside auto layout */
-}
-
-.button1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 20px;
+  align-items: center;
+  padding: 16px 16px;
+  gap: 10px;
+  position: relative;
+  width: 201px;
+  height: 37px;
+  background: #F2F6FA;
+  border-radius: 5px;
+}
+
+.nadzagolovok {
   position: absolute;
+  width: 165px;
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  /* identical to box height, or 16px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* Серый 1 */
+  color: #2E363E;
+}
+
+.bu {
+  align-items: center;
+  padding: 30px 50px;
+  gap: 10px;
+  position: relative;
   width: 208px;
   height: 88px;
-  left: 30;
-  top: 583px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+}
+
+.bu:active {
+  vertical-align: middle;
+  background-color: #8d8d8d;
 }
 
 /* шрифты 
 &display=swap&subset=cyrillic-ext */
 /* переменные */
+.CLOUD {
+  display: grid;
+  grid-template-columns: minmax(410px, 1920px);
+  grid-template-rows: 410px;
+  grid-template-areas: "cloud";
+  background-color: black;
+  width: 1920px;
+}
+
 .INSIDE {
   background: rgba(0, 0, 0, 0) no-repeat;
   /* Inside auto layout */
@@ -217,9 +256,9 @@
 
 .screen {
   display: grid;
-  grid-template-columns: minmax(10px, 369px) minmax(400px, 1551px);
-  grid-template-rows: 870px 410px;
-  grid-template-areas: "pusto foto" "cloud cloud";
+  grid-template-columns: minmax(10px, 369px) minmax(400px, 1180px);
+  grid-template-rows: 870px;
+  grid-template-areas: "pusto foto foto";
   background-color: rgb(0, 0, 0);
   width: 1920px;
 }
@@ -234,7 +273,6 @@
 .pusto {
   grid-area: pusto;
   background-color: black;
-  min-width: 10px;
 }
 
 .cloud {

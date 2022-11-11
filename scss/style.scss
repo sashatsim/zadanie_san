@@ -19,6 +19,14 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
+.CLOUD{
+    display: grid;
+    grid-template-columns: minmax(410px, 1920px);
+    grid-template-rows: 410px;
+    grid-template-areas: "cloud";
+    background-color: black;
+    width: 1920px;
+}
 .INSIDE{
     
 //height: 1384px;
@@ -52,11 +60,10 @@ background: url("otvetka.png") no-repeat;
 .screen{
     //position: fixed;
     display: grid;
-    grid-template-columns:  minmax(10px,369px) minmax(400px,1551px);
-    grid-template-rows: 870px 410px;
+    grid-template-columns:  minmax(10px,369px) minmax(400px,1180px);
+    grid-template-rows: 870px;
     grid-template-areas: 
-    "pusto foto"
-    "cloud cloud";
+    "pusto foto foto";
     background-color: rgb(0, 0, 0);
     width: 1920px;
 }
@@ -72,7 +79,8 @@ background: url("otvetka.png") no-repeat;
 .pusto{
     grid-area: pusto;
     background-color: black;
-    min-width: 10px;
+    //min-width: 10px;
+    //position: fixed;
 }
 .cloud{
     grid-area: cloud;
@@ -83,6 +91,7 @@ background: url("otvetka.png") no-repeat;
     background: url("cloud.png") no-repeat;
     //margin-top: -500xp;
     //position: relative;
+    //background-size: contain;
     background-color: rgba(0, 0, 0, 0);
     //position: fixed;
 }
