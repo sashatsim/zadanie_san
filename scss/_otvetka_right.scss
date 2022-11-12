@@ -64,3 +64,79 @@ flex: none;
 //order: 1;
 flex-grow: 0;
 }
+
+.iconki_grid{
+    display: grid;
+    grid-template-columns: 237px 237px;
+    grid-template-rows: 54px 63px 21px 54px 63px;  
+    grid-template-areas: 
+
+    "of kf"
+    "ot kt"
+    "p pp"
+    "tf pf"
+    "tt pt" ;
+}
+
+.online_f{
+grid-area: of;
+}
+.online_t{
+grid-area: ot;
+width: 203px;
+height: 42px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #2E363E;
+}
+.kalendar_f{
+grid-area: kf;
+}
+.kalendar_t{
+grid-area: kt;
+width: 203px;
+height: 63px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #2E363E;
+}
+.telejka_f{
+    grid-area: tf;
+}
+.telejka_t{
+grid-area: tt;
+width: 213px;
+height: 88px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #2E363E;
+}
+.podarok_f{
+grid-area: pf;
+}
+.podarok_t{
+grid-area: pt;
+width: 203px;
+height: 63px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #2E363E;
+}
+.pus{
+grid-area: pp;
+}
+.pus1{
+grid-area: p;
+}

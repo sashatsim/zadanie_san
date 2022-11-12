@@ -225,7 +225,7 @@
 .otvetka {
   display: grid;
   grid-template-columns: minmax(10px, 369px) 1181px 370px;
-  grid-template-rows: 1006px;
+  grid-template-rows: 850px;
   grid-template-areas: "p vn pp";
 }
 
@@ -247,6 +247,12 @@
   grid-template-rows: 410px;
   grid-template-areas: "cloud";
   background-color: rgb(0, 0, 0);
+}
+
+.cll {
+  grid-area: cloud;
+  background: url("cloud1.png") repeat-x;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .vn_grid {
@@ -394,24 +400,19 @@
   background: #616268;
   border: 1px solid #616268;
   border-radius: 2px;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.sogl_text {
+.ssogl_text {
   width: 252px;
   height: 15px;
-  padding-left: 30px;
-  padding-bottom: 30px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 130%;
-  /* identical to box height, or 14px */
-  /* Серый 5 */
   color: #7E868E;
 }
 
@@ -477,6 +478,85 @@
   color: #434B53;
   flex: none;
   flex-grow: 0;
+}
+
+.iconki_grid {
+  display: grid;
+  grid-template-columns: 237px 237px;
+  grid-template-rows: 54px 63px 21px 54px 63px;
+  grid-template-areas: "of kf" "ot kt" "p pp" "tf pf" "tt pt";
+}
+
+.online_f {
+  grid-area: of;
+}
+
+.online_t {
+  grid-area: ot;
+  width: 203px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2E363E;
+}
+
+.kalendar_f {
+  grid-area: kf;
+}
+
+.kalendar_t {
+  grid-area: kt;
+  width: 203px;
+  height: 63px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2E363E;
+}
+
+.telejka_f {
+  grid-area: tf;
+}
+
+.telejka_t {
+  grid-area: tt;
+  width: 213px;
+  height: 88px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2E363E;
+}
+
+.podarok_f {
+  grid-area: pf;
+}
+
+.podarok_t {
+  grid-area: pt;
+  width: 203px;
+  height: 63px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2E363E;
+}
+
+.pus {
+  grid-area: pp;
+}
+
+.pus1 {
+  grid-area: p;
 }
 
 /* шрифты 
