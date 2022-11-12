@@ -1,0 +1,278 @@
+.kurs{
+    background-color: #000000;
+}
+.kurs_grid{
+    display: grid;
+    grid-template-columns: minmax(10px, 369) 1182px minmax(10px,369px);
+    grid-template-rows: 559px;
+    grid-template-areas: "pst2 kvn pst3";
+}
+.pst2{
+    grid-area: pst2;
+}
+.pst3{
+    grid-area: pst3;
+}
+.vn_kurs_grid{
+    grid-area: kvn;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 80px 45px 52px 53px 60px 45px 52px 53px;
+    grid-template-areas: 
+    "zk zk zk"
+    "p p p"
+    "f1 f2 f3"
+    "s c k"
+    "st ct kt"
+    "p1 p1 p1"
+    "f4 f5 f6"
+    "e pr en"
+    "et prt ent";
+    justify-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+.zagolovok_kurs{
+    grid-area: zk;
+    //position: absolute;
+    width: 1180px;
+    height: 60px;
+    left: 370px;
+    top: 575px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.ff1{
+    grid-area: f1;
+    background: url("1. Цифра (контур).png");
+    background-size: contain;
+}
+.ff2{
+    grid-area: f2;
+}
+.ff3{
+    grid-area: f3;
+}
+.ff4{
+    grid-area: f4;
+}
+.ff5{
+    grid-area: f5;
+}
+.ff6{
+    grid-area: f6;
+}
+.pst{
+    grid-area: p;
+}
+.pst1{
+    grid-area: p1;
+}
+.sglaz{
+    grid-area: s;
+    width: 328px;
+    height: 28px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 152%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-self: center;
+}
+.sglaz_text{
+    grid-area: st;
+    width: 328px;
+    height: 21px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    align-self: start;
+}
+.cnatie{
+    align-self: center;
+    grid-area: c;
+    width: 328px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.snatie_text{
+    grid-area: ct;
+    width: 328px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.kradnik{
+    grid-area: k;
+    align-self: center;
+    width: 328px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.kradnik_text{
+    grid-area:kt;
+    width: 328px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.exor{
+    align-self: center;
+    grid-area: e;
+    width: 328px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.exor_text{
+    grid-area: et;
+    width: 328px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.praktika{
+    align-self: center;
+    grid-area: pr;
+    width: 328px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.praktika_text{
+    grid-area: prt;
+    width: 328px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.energy{
+    align-self: center;
+    grid-area: en;
+    width: 328px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.energy_text{
+    grid-area: ent;
+    width: 328px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.oblako{
+    display: grid;
+    grid-template-columns: minmax(30px, 1920px);
+    grid-template-rows: 595px;
+    grid-template-areas: "cloud";
+    background-color: rgb(0, 0, 0);
+}
+.obl{
+    grid-area: cloud;
+    margin-top: -100px;
+    background: url("cloud.png") repeat-x;
+    background-color: rgba(0, 0, 0, 0);
+}
