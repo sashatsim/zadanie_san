@@ -231,6 +231,8 @@
 
 .p {
   grid-area: p;
+  background: url("карты.png") no-repeat;
+  text-align: right;
 }
 
 .pp {
@@ -600,7 +602,6 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
-  display: flex;
   align-items: flex-end;
   text-align: center;
   letter-spacing: -1px;
@@ -853,6 +854,58 @@
   margin-top: -100px;
   background: url("cloud.png") repeat-x;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.programma_grid {
+  display: grid;
+  grid-template-columns: minmax(10px, 369) 1182px minmax(10px, 369px);
+  grid-template-rows: 459px;
+  grid-template-areas: "net vn net1";
+}
+
+.programma_vn_grid {
+  display: grid;
+  align-items: end;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 79px 360px;
+  grid-template-areas: "zag zag zag" "one two tri";
+}
+
+.blok01 {
+  margin-bottom: 22px;
+  justify-self: center;
+  align-items: end;
+  box-sizing: border-box;
+  width: 370px;
+  height: 275px;
+  left: 0px;
+  top: calc(50% - 137.5px);
+  background: #FFFFFF;
+  border: 2px solid #2A2C2E;
+  border-radius: 5px;
+}
+
+.vn_blok_grid {
+  align-items: end;
+  margin-left: 39.5px;
+  display: grid;
+  grid-template-columns: -webkit-max-content;
+  grid-template-columns: max-content;
+  grid-template-rows: 167px 88px;
+  grid-template-areas: "t1" "t2";
+}
+
+.t1 {
+  width: 64px;
+  height: 86px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 143%;
+  display: flex;
+  align-items: center;
+  color: #131314;
 }
 
 /* шрифты 
