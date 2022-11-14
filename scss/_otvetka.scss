@@ -1,6 +1,6 @@
 .otvetka{
     display: grid;
-    grid-template-columns: minmax(10px,369px) 1181px 370px;
+    grid-template-columns: minmax(10px, 1fr) 1fr minmax(10px, 1fr);
     grid-template-rows: 850px;
     grid-template-areas: 
     "p vn pp";
@@ -18,7 +18,7 @@ grid-area: vn;
 }
 .cl{
     display: grid;
-    grid-template-columns: minmax(30px, 1920px);
+    grid-template-columns: 1fr;
     grid-template-rows: 595px;
     grid-template-areas: "cloud";
     background-color: rgb(0, 0, 0);
@@ -31,9 +31,10 @@ grid-area: vn;
 }
 .vn_grid{
     display: grid;
-    grid-template-columns: minmax(575px, 590.5px) minmax(575px, 590.5px);
+    grid-template-columns: 1fr 1fr;
 }
 .ramka{
+    margin-right: 79px;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
