@@ -124,6 +124,14 @@ top: 211px;
     "p zag pp"
     "p otziv pp";
 }
+.reg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 225px;
+    grid-template-areas: 
+    "p ra pp"
+    "p ra pp";
+}
 .otziv{
     border: 2px solid #E2EAF2;
     box-shadow: 2px 8px 16px;
@@ -150,4 +158,35 @@ height: 475px;
 box-sizing: border-box;
 width: 380px;
 height: 380px;
+}
+.sl{
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 70px 99px;
+gap: 36px;
+height: 389px;
+background: #FFFFFF;
+border: 8px solid #000000;
+border-radius: 8px;
+}
+.sgtext{
+padding-right: 37px;
+width: 880px;
+height: 31px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 143%;
+text-align: center;
+letter-spacing: -0.2px;
+color: #2E363E;
+}
+.grid_shtuka{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "r rr rrr";
 }
