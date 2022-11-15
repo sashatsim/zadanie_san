@@ -64,7 +64,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  justify-self: end;
+  justify-self: start;
   color: #ffffff;
   align-self: start;
 }
@@ -86,7 +86,7 @@
   font-size: 12px;
   line-height: 150%;
   grid-area: c;
-  justify-self: end;
+  justify-self: start;
   align-self: start;
   color: rgb(255, 255, 255);
   align-items: start;
@@ -102,7 +102,7 @@
   font-size: 18px;
   line-height: 152%;
   padding-top: 17px;
-  justify-self: end;
+  justify-self: start;
   color: #ffffff;
 }
 
@@ -114,7 +114,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  justify-self: end;
+  justify-self: start;
   grid-area: f;
   color: #ffffff;
 }
@@ -126,7 +126,7 @@
   font-size: 12px;
   line-height: 150%;
   grid-area: g;
-  justify-self: end;
+  justify-self: start;
   color: #ffffff;
 }
 
@@ -148,25 +148,29 @@
 
 .imgg {
   grid-area: imgg;
-  justify-self: center;
-  align-self: end;
+  align-self: center;
+  justify-self: end;
+  margin-right: 17px;
 }
 
 .f1 {
   grid-area: f1;
-  justify-self: start;
+  justify-self: end;
+  margin-right: 17px;
   align-self: center;
 }
 
 .f2 {
   grid-area: f2;
-  justify-self: start;
+  justify-self: end;
+  margin-right: 17px;
   align-self: center;
 }
 
 .f3 {
   grid-area: f3;
-  justify-self: start;
+  justify-self: end;
+  margin-right: 17px;
   align-self: center;
 }
 
@@ -982,4 +986,57 @@
 .babulia {
   align-self: center;
   justify-self: center;
+}
+
+.vn_block_grid1 {
+  align-items: end;
+  margin-left: 39.5px;
+  display: grid;
+  grid-template-columns: -webkit-max-content;
+  grid-template-columns: max-content;
+  grid-template-rows: 167px 88px;
+  grid-template-areas: "foto" "t1" "t2";
+}
+
+.fotoo {
+  grid-area: foto;
+  justify-self: center;
+  margin-left: 167px;
+  margin-top: 42.68px;
+  margin-bottom: 26.68px;
+}
+
+.blok_otziv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 225px;
+  grid-template-areas: "p zag pp" "p otziv pp";
+}
+
+.otziv {
+  border: 2px solid #E2EAF2;
+  box-shadow: 2px 8px 16px;
+  background-color: white;
+  grid-area: otziv;
+  display: grid;
+  align-items: end;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 615px;
+  grid-template-areas: "zag zag" "text foto";
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  width: 380px;
+  height: 475px;
+}
+
+.gadalka {
+  box-sizing: border-box;
+  width: 380px;
+  height: 380px;
 }

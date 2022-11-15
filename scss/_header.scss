@@ -25,7 +25,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
-justify-self: end;
+justify-self: start;
 color: #ffffff;
 align-self: start;
 }
@@ -47,7 +47,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 grid-area: c;
-justify-self: end;
+justify-self: start;
 align-self: start;
 color: rgb(255, 255, 255);
 align-items: start;
@@ -63,7 +63,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 152%;
 padding-top: 17px;
-justify-self: end;
+justify-self: start;
 color: #ffffff;
 }
 
@@ -76,7 +76,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
-justify-self: end;
+justify-self: start;
 grid-area: f;
 
 color: #ffffff;
@@ -88,7 +88,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 grid-area: g;
-justify-self: end;
+justify-self: start;
 color: #ffffff;
 }
 
@@ -114,24 +114,28 @@ color: #ffffff;
 
 .imgg{
     grid-area: imgg;
-    justify-self: center;
-    align-self: end;
+    align-self: center;
+    justify-self: end;
+    margin-right: 17px;
 }
 
 .f1{
     grid-area: f1;
-    justify-self: start;
+    justify-self: end;
+    margin-right: 17px;
     align-self: center;
 }
 
 .f2{
     grid-area: f2;
-    justify-self: start;
+    justify-self: end;
+    margin-right: 17px;
     align-self: center;
 }
 
 .f3{
     grid-area: f3;
-    justify-self: start;
+    justify-self: end;
+    margin-right: 17px;
     align-self: center;
 }
